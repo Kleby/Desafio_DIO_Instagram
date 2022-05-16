@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, 
+                        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+}
+
+body{
+    /* width: 100%; */
+    min-height: 100vh;
+    background-color: #FaFaFa;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 60%; */
+    height: 100vh;
+    max-width: 700px;
+}
+
+.instagram-continue{
+    display: flex;
+    align-items: center; /*Agora alinhado centro na horizontal*/
+    justify-content: center; /* agpra Alinhado centro na vertical*/
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+    margin: 10px 2px;
+    flex-basis: auto;
+}
+
+
+.instagram-phone{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 260px;
+    height: 560px;
+}
+.instagram-phone img{
+    width: 265px;
+    height: 580px;
+}
+
+
+.instagram-logo{
+    padding: 10px;
+   
+}
+
+.container-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.login-instagram input{
+    margin: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px 0;
+    width: 200px ;
+    font-size: 12px;
+}
+.iniciar-sessao{
+    font-weight: 600;
+    background-color: #0095f6;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 15px 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100% ;
+
+}
+.separador-entrada {
+    margin: 10px 40px 18px;
+    font-weight: 600;
+}
+.separador-entrada p {
+    color: #8e8e8e;
+    font-size: 13px;
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.separador-entrada p::before{
+    content: "";
+    height: 1px;
+    width: 100px;
+    margin-right: 10px;
+    background-color: #dbdbdb;
+}
+
+.separador-entrada p::after{
+    content: "";
+    height: 1px;
+    width: 100px;
+    margin-left: 10px;
+    background-color: #dbdbdb;
+}
+
+.login-facebook{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.login-facebook img{
+  width: 25px;
+  height: 18px;
+  padding-right: 6px;
+}
+.text-facebook{
+    color: #385185;
+    margin-bottom: 4px;
+    font-weight: 700;
+}
+
+.esqueci-senha p{
+    font-size: 12px;
+    color: #00376b;
+    margin-top: 8px;
+}
+
+.instagram-continue{
+    margin-left: 50px;
+}
+.get-the-app{
+    text-align: center; 
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-download{
+    width: 100%;
+    background-size: cover;
+    margin: 8px;
+    padding-top: 10px;
+}
+
+.app-download img{
+    width: 100%;
+
+}
+
+.get-app{
+    font-weight: 700;
+    font-size: 16px;
+    
+}
+/*queries*/
+@media(max-width: 1024px){
+    .instagram-wrapper{
+        display: flex;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*mobile*/
+@media(max-width: 650px){
+    body{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: #fff;   
+    }
+    .instagram-wrapper{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 90%; 
+        min-width: 200px;
+        padding: 0;
+        margin: 0;
+
+    }
+    .instagram-phone{
+        display: none ;
+    }
+    .instagram-continue{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        margin: 0 0 30% 0;
+        padding: 0 ;
+        
+    }
+
+    .group{
+        width: 90%;
+    }
+
+    .login-facebook{
+        width: 90%;
+    }
+
+    .text-facebook{
+        margin: 0;
+        width: 90%;
+    }
+
+}
